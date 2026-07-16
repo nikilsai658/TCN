@@ -1,0 +1,269 @@
+<div class="min-h-screen bg-slate-100 p-6">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
+
+        <div>
+            <h1 class="text-3xl font-bold text-slate-800">
+            Projects
+            </h1>
+            <p class="text-slate-500 mt-1">
+                Build real-world experience through practical projects.
+            </p>
+        </div>
+
+       <label
+    for="projectUpload"
+    class="bg-[#2F3E46] hover:bg-[#2F3E46] text-white font-bold px-6 py-3 rounded-xl shadow-lg cursor-pointer inline-block">
+    + Submit Project
+</label>
+
+<input
+    id="projectUpload"
+    type="file"
+    hidden
+    accept=".zip,.pdf,.doc,.docx,.ppt,.pptx,.rar,.7z">
+
+    </div>
+
+    <!-- Statistics -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+
+        <div class="bg-white rounded-2xl shadow p-5 hover:shadow-xl transition">
+            <p class="text-gray-500">Total Projects</p>
+            <h2 class="text-3xl font-bold text-[#2F3E46] mt-2">12</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-5 hover:shadow-xl transition">
+            <p class="text-gray-500">Active</p>
+            <h2 class="text-3xl font-bold text-[#2F3E46] mt-2">4</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-5 hover:shadow-xl transition">
+            <p class="text-gray-500">Completed</p>
+            <h2 class="text-3xl font-bold text-[#2F3E46] mt-2">6</h2>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-5 hover:shadow-xl transition">
+            <p class="text-gray-500">Pending Review</p>
+            <h2 class="text-3xl font-bold text-[#2F3E46] mt-2">2</h2>
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <div class="bg-white rounded-xl shadow p-4 mb-8">
+
+        <div class="flex flex-col md:flex-row gap-4">
+
+            <input
+                type="text"
+                placeholder="Search Project..."
+                class="flex-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+            <select
+                class="border rounded-lg px-4 py-3">
+
+                <option>All Status</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+                <option>Pending</option>
+
+            </select>
+
+            <button
+                class="bg-slate-800 text-white px-6 rounded-lg hover:bg-slate-900">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Project Cards -->
+    <div class="grid lg:grid-cols-2 gap-6">
+
+        <!-- Card -->
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition duration-300 overflow-hidden">
+
+            <div class="bg-[#2F3E46] text-white px-6 py-4 flex justify-between">
+
+                <h2 class="font-bold text-xl">
+                    AI Attendance System
+                </h2>
+
+            </div>
+
+            <div class="p-6">
+
+                <div class="space-y-3 text-gray-600">
+
+                    <p><strong>Faculty :</strong> Dr. Ramesh</p>
+
+                    <p><strong>Department :</strong> Computer Science</p>
+
+                    <p><strong>Team :</strong> 4 Members</p>
+
+                    <p><strong>Due Date :</strong> 25 Aug 2026</p>
+
+                </div>
+
+                <!-- Progress -->
+
+                <div class="mt-6">
+
+                    <div class="flex justify-between mb-2">
+
+                        <span class="font-medium">
+                            Progress
+                        </span>
+
+                        <span class="font-bold text-[#2F3E46]">
+                            65%
+                        </span>
+
+                    </div>
+
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+
+                        <div
+                            class="bg-[#2F3E46] h-3 rounded-full"
+                            style="width:65%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Technologies -->
+
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                        Angular
+                    </span>
+
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                        .NET
+                    </span>
+
+                    <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">
+                        SQL Server
+                    </span>
+
+                    <span class="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm">
+                        Tailwind
+                    </span>
+
+                </div>
+
+                <!-- Buttons -->
+
+                <div class="flex gap-3 mt-8">
+
+                    <button
+                        class="flex-1 bg-[#24c0c5] hover:bg-[#24c0c5] text-black font-bold py-3 rounded-lg">
+                        View
+                    </button>
+
+                    <label
+    for="projectUpload"
+    class="flex-1 bg-[#2F3E46] hover:bg-[#2F3E46] text-white font-bold  py-3 rounded-lg cursor-pointer text-center">
+    Upload
+</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div
+            class="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition duration-300 overflow-hidden">
+
+            <div class="bg-[#2F3E46] text-white px-6 py-4 flex justify-between">
+
+                <h2 class="font-bold text-xl">
+                    LMS Portal Development
+                </h2>
+
+            </div>
+
+            <div class="p-6">
+
+                <div class="space-y-3 text-gray-600">
+
+                    <p><strong>Faculty :</strong> Mr. Kiran</p>
+
+                    <p><strong>Department :</strong> Information Technology</p>
+
+                    <p><strong>Team :</strong> 3 Members</p>
+
+                    <p><strong>Completed :</strong> 10 July 2026</p>
+
+                </div>
+
+                <div class="mt-6">
+
+                    <div class="flex justify-between mb-2">
+
+                        <span class="font-medium">
+                            Progress
+                        </span>
+
+                        <span class="font-bold text-[#2F3E46]">
+                            100%
+                        </span>
+
+                    </div>
+
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+
+                        <div
+                            class="bg-[#2F3E46] h-3 rounded-full"
+                            style="width:100%">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+                        Angular
+                    </span>
+
+                    <span class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm">
+                        Node.js
+                    </span>
+
+                    <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">
+                        MongoDB
+                    </span>
+
+                </div>
+
+                <div class="flex gap-3 mt-8">
+
+                    <button
+                        class="flex-1 bg-[#24c0c5] hover:bg-[#24c0c5] text-black font-bold py-3 rounded-lg">
+                        View
+                    </button>
+
+                    <button
+                        class="flex-1 bg-[#2F3E46] hover:bg-[#2F3E46] text-white font-bold py-3 rounded-lg">
+                        Download
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

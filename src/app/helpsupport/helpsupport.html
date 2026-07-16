@@ -1,0 +1,414 @@
+<div
+  *ngIf="showNotification"
+  class="toast">
+
+  <div class="flex items-center gap-3">
+
+    <div class="text-2xl">✅</div>
+
+    <div>
+      <h4 class="font-semibold">Ticket Raised Successfully</h4>
+      <p class="text-sm">Our support team will contact you soon.</p>
+    </div>
+
+  </div>
+
+</div>
+<div class="min-h-screen  p-6">
+ 
+    <!-- Header -->
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-slate-800">
+            Help & Support
+        </h1>
+        <p class="text-gray-500 mt-2">
+            Need Help? Our team is ready to assist you every step of the way.
+        </p>
+    </div>
+    <!-- Contact Form + Contact Details -->
+    <div class="grid lg:grid-cols-3 gap-6">
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-6">
+
+            <h2 class="text-2xl font-bold mb-6">
+                Submit a Support Ticket
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+                <div>
+                    <label class="block mb-2 font-medium">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+
+                <div>
+                    <label class="block mb-2 font-medium">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none">
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+
+                <label class="block mb-2 font-medium">
+                    Category
+                </label>
+
+                <select class="w-full border rounded-lg px-4 py-3">
+
+                    <option>Select Issue</option>
+                    <option>Assignments</option>
+                    <option>Projects</option>
+                    <option>Course Access</option>
+                    <option>Certificates</option>
+                    <option>Login Problem</option>
+                    <option>Technical Issue</option>
+
+                </select>
+
+            </div>
+
+            <div class="mt-5">
+
+                <label class="block mb-2 font-medium">
+                    Message
+                </label>
+
+                <textarea
+                    rows="6"
+                    placeholder="Describe your issue..."
+                    class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+
+            </div>
+
+            <div class="mt-5 ">
+                <label class="block mb-2 font-medium">
+                    Uplaod Image
+                </label>
+               <input type="file" class="border-1 p-2 w-1/3 rounded-md" >
+            </div>
+            <div class="mt-6">
+
+                <button
+type="button"
+(click)="submitTicket()"
+class="bg-[#2F3E46] hover:bg-[#435861] text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition">
+
+    Submit Ticket
+
+</button>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Details -->
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+
+            <h2 class="text-2xl font-bold mb-6">
+                Contact Information
+            </h2>
+
+            <div class="space-y-6">
+
+                <div>
+
+                    <h3 class="font-semibold text-black">
+                      <img src="../../assets/images/mail-filled.svg" style="width: 30px;display: inline;" >
+                        Email
+                    </h3>
+
+                    <p class="text-gray-500">
+                        support@technexcloud.com
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3 class="font-semibold text-black">
+                       <img src="../../assets/images/baseline-phone.svg" style="width: 30px;display: inline;" >
+                       Phone
+                    </h3>
+
+                    <p class="text-gray-500">
+                        +91 98765 43210
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3 class="font-semibold text-black">
+                        <img src="../../assets/images/hours-12.svg" style="width: 30px;display: inline;" > Working Hours
+                    </h3>
+
+                    <p class="text-gray-500">
+                        Monday - Friday
+                    </p>
+
+                    <p class="text-gray-500">
+                        9:00 AM - 6:00 PM
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3 class="font-semibold text-black">
+                     <img src="../../assets/images/map.svg" style="width: 30px;display: inline;" >
+                       Address
+                    </h3>
+
+                    <p class="text-gray-500">
+                        Technex Cloud Networks Pvt Ltd
+                    </p>
+
+                    <p class="text-gray-500">
+                        Hyderabad, Telangana
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Raised Tickets -->
+<div class="bg-white rounded-2xl shadow-lg p-6 mt-8">
+
+    <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold text-slate-800">
+            My Raised Tickets
+        </h2>
+
+        <span class="bg-[#2F3E46] text-white font-semibold px-4 py-2 rounded-full">
+            4 Tickets
+        </span>
+    </div>
+
+    <div class="space-y-4">
+
+        <!-- Ticket 1 -->
+        <details class="group border border-gray-200 rounded-xl overflow-hidden">
+
+            <summary class="flex justify-between items-center cursor-pointer list-none px-6 py-4 hover:bg-slate-50">
+
+                <div>
+                    <h3 class="font-semibold text-lg">
+                        Ticket #1001 - Unable to Upload Assignment
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Created: 15 July 2026
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-4">
+
+                    <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">
+                        Pending
+                    </span>
+
+                    <span class="text-2xl transition-transform group-open:rotate-45">
+                        +
+                    </span>
+
+                </div>
+
+            </summary>
+
+            <div class="border-t px-6 py-5 bg-slate-50">
+
+                <p class="text-gray-700">
+                    I am unable to upload my assignment. Every time I click
+                    <strong>Submit</strong>, an error appears.
+                </p>
+
+                <div class="mt-4">
+
+                    <h4 class="font-semibold">
+                        Support Response
+                    </h4>
+
+                    <p class="text-gray-600 mt-2">
+                        Our team is investigating the issue. We will update you shortly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <!-- Ticket 2 -->
+        <details class="group border border-gray-200 rounded-xl overflow-hidden">
+
+            <summary class="flex justify-between items-center cursor-pointer list-none px-6 py-4 hover:bg-slate-50">
+
+                <div>
+                    <h3 class="font-semibold text-lg">
+                        Ticket #1002 - Certificate Not Available
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Created: 12 July 2026
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-4">
+
+                    <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                        Resolved
+                    </span>
+
+                    <span class="text-2xl transition-transform group-open:rotate-45">
+                        +
+                    </span>
+
+                </div>
+
+            </summary>
+
+            <div class="border-t px-6 py-5 bg-slate-50">
+
+                <p class="text-gray-700">
+                    My certificate was not visible after completing the course.
+                </p>
+
+                <div class="mt-4">
+
+                    <h4 class="font-semibold">
+                        Support Response
+                    </h4>
+
+                    <p class="text-gray-600 mt-2">
+                        Your certificate has been generated successfully. Please refresh your dashboard and check the Certificates section.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <!-- Ticket 3 -->
+        <details class="group border border-gray-200 rounded-xl overflow-hidden">
+
+            <summary class="flex justify-between items-center cursor-pointer list-none px-6 py-4 hover:bg-slate-50">
+
+                <div>
+                    <h3 class="font-semibold text-lg">
+                        Ticket #1003 - Login Issue
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Created: 08 July 2026
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-4">
+
+                    <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">
+                        Closed
+                    </span>
+
+                    <span class="text-2xl transition-transform group-open:rotate-45">
+                        +
+                    </span>
+
+                </div>
+
+            </summary>
+
+            <div class="border-t px-6 py-5 bg-slate-50">
+
+                <p class="text-gray-700">
+                    I forgot my password and couldn't log in to the LMS.
+                </p>
+
+                <div class="mt-4">
+
+                    <h4 class="font-semibold">
+                        Support Response
+                    </h4>
+
+                    <p class="text-gray-600 mt-2">
+                        Your password has been reset successfully. Please use the new credentials sent to your registered email.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+        <!-- Ticket 4 -->
+        <details class="group border border-gray-200 rounded-xl overflow-hidden">
+
+            <summary class="flex justify-between items-center cursor-pointer list-none px-6 py-4 hover:bg-slate-50">
+
+                <div>
+                    <h3 class="font-semibold text-lg">
+                        Ticket #1004 - Course Access Request
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        Created: 05 July 2026
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-4">
+
+                    <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
+                        In Progress
+                    </span>
+
+                    <span class="text-2xl transition-transform group-open:rotate-45">
+                        +
+                    </span>
+
+                </div>
+
+            </summary>
+
+            <div class="border-t px-6 py-5 bg-slate-50">
+
+                <p class="text-gray-700">
+                    I don't have access to the Full Stack Development course after enrollment.
+                </p>
+
+                <div class="mt-4">
+
+                    <h4 class="font-semibold">
+                        Support Response
+                    </h4>
+
+                    <p class="text-gray-600 mt-2">
+                        Your request has been forwarded to the course administrator. Access will be granted within 24 hours.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </details>
+
+    </div>
+
+</div>
