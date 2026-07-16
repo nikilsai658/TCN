@@ -87,7 +87,7 @@ export const routes: Routes = [
                 path:'comp',component:Comp
             },
              {
-               path: 'editor/:id', component: AssignmentEditor
+               path: 'editor', component: AssignmentEditor
              },
              {
                 path:'leaderboard',component:Leaderboard
