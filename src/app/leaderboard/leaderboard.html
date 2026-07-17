@@ -1,14 +1,14 @@
-
-<div class="min-h-screen  p-6">
+<div class="min-h-screen p-4 sm:p-6">
 
     <!-- Header -->
-    <div class="flex justify-between items-center mb-6">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-6">
 
         <div>
-            <h1 class="text-3xl font-bold text-slate-800">
-                 Leaderboard
+            <h1 class="text-2xl sm:text-3xl font-bold text-slate-800">
+                Leaderboard
             </h1>
-            <p class="text-slate-500">
+
+            <p class="text-sm sm:text-base text-slate-500 mt-1">
                 Top performing students based on assignments, quizzes, and projects.
             </p>
         </div>
@@ -19,9 +19,10 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
 
         <!-- 2nd -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center mt-10">
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center md:mt-10 order-2 md:order-1">
 
-            <img src="https://i.pravatar.cc/150?img=12"
+            <img
+                src="https://i.pravatar.cc/150?img=12"
                 class="w-20 h-20 rounded-full mx-auto border-4 border-gray-300">
 
             <h2 class="mt-4 text-xl font-bold">
@@ -44,13 +45,14 @@
 
         <!-- 1st -->
         <div
-            class="bg-gradient-to-b from-[#2F3E46] to-[#24c0c5] rounded-2xl shadow-2xl p-8 text-center scale-105">
+            class="bg-gradient-to-b from-[#2F3E46] to-[#24c0c5] rounded-2xl shadow-2xl p-8 text-center md:scale-105 order-1 md:order-2">
 
             <div class="text-5xl">
                 👑
             </div>
 
-            <img src="https://i.pravatar.cc/150?img=5"
+            <img
+                src="../../assets/images/student1.png"
                 class="w-24 h-24 rounded-full mx-auto border-4 border-white mt-2">
 
             <h2 class="mt-4 text-2xl font-bold text-white">
@@ -68,9 +70,10 @@
         </div>
 
         <!-- 3rd -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 text-center mt-10">
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center md:mt-10 order-3">
 
-            <img src="https://i.pravatar.cc/150?img=18"
+            <img
+                src="../../assets/images/student3.png"
                 class="w-20 h-20 rounded-full mx-auto border-4 border-gray-200">
 
             <h2 class="mt-4 text-xl font-bold">
@@ -96,103 +99,163 @@
     <!-- Leaderboard Table -->
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
 
-        <table class="w-full">
+        <div class="overflow-x-auto">
 
-            <thead class="bg-slate-800 text-white">
+            <table class="min-w-[850px] w-full">
 
-                <tr>
+                <thead class="bg-slate-800 text-white">
 
-                    <th class="p-4 text-left">Rank</th>
-                    <th class="p-4 text-left">Student</th>
-                    <th class="p-4 text-center">Assignments</th>
-                    <th class="p-4 text-center">Projects</th>
-                    <th class="p-4 text-center">Quiz</th>
-                    <th class="p-4 text-center">Points</th>
+                    <tr>
 
-                </tr>
+                        <th class="p-4 text-left whitespace-nowrap">
+                            Rank
+                        </th>
 
-            </thead>
+                        <th class="p-4 text-left whitespace-nowrap">
+                            Student
+                        </th>
 
-            <tbody>
+                        <th class="p-4 text-center whitespace-nowrap">
+                            Assignments
+                        </th>
 
-                <tr class="border-b hover:bg-slate-50">
+                        <th class="p-4 text-center whitespace-nowrap">
+                            Projects
+                        </th>
 
-                    <td class="p-4 font-bold">1</td>
+                        <th class="p-4 text-center whitespace-nowrap">
+                            Quiz
+                        </th>
 
-                    <td class="p-4 flex items-center gap-3">
+                        <th class="p-4 text-center whitespace-nowrap">
+                            Points
+                        </th>
 
-                        <img src="https://i.pravatar.cc/50?img=5"
-                            class="w-10 h-10 rounded-full">
+                    </tr>
 
-                        Priya Sharma
+                </thead>
 
-                    </td>
+                <tbody>
 
-                    <td class="text-center">98%</td>
+                    <tr class="border-b hover:bg-slate-50">
 
-                    <td class="text-center">100%</td>
+                        <td class="p-4 font-bold whitespace-nowrap">
+                            1
+                        </td>
 
-                    <td class="text-center">97%</td>
+                        <td class="p-4">
 
-                    <td class="text-center font-bold text-black'">
-                        1100
-                    </td>
+                            <div class="flex items-center gap-3 whitespace-nowrap">
 
-                </tr>
+                                <img
+                                    src="https://i.pravatar.cc/50?img=5"
+                                    class="w-10 h-10 rounded-full">
 
-                <tr class="border-b hover:bg-slate-50">
+                                <span>Priya Sharma</span>
 
-                    <td class="p-4 font-bold">2</td>
+                            </div>
 
-                    <td class="p-4 flex items-center gap-3">
+                        </td>
 
-                        <img src="https://i.pravatar.cc/50?img=12"
-                            class="w-10 h-10 rounded-full">
+                        <td class="text-center whitespace-nowrap">
+                            98%
+                        </td>
 
-                        Mohan Kumar
+                        <td class="text-center whitespace-nowrap">
+                            100%
+                        </td>
 
-                    </td>
+                        <td class="text-center whitespace-nowrap">
+                            97%
+                        </td>
 
-                    <td class="text-center">95%</td>
+                        <td class="text-center font-bold text-black whitespace-nowrap">
+                            1100
+                        </td>
 
-                    <td class="text-center">96%</td>
+                    </tr>
 
-                    <td class="text-center">94%</td>
+                    <tr class="border-b hover:bg-slate-50">
 
-                    <td class="text-center font-bold text-black">
-                        950
-                    </td>
+                        <td class="p-4 font-bold whitespace-nowrap">
+                            2
+                        </td>
 
-                </tr>
+                        <td class="p-4">
 
-                <tr class="border-b hover:bg-slate-50">
+                            <div class="flex items-center gap-3 whitespace-nowrap">
 
-                    <td class="p-4 font-bold">3</td>
+                                <img
+                                    src="https://i.pravatar.cc/50?img=12"
+                                    class="w-10 h-10 rounded-full">
 
-                    <td class="p-4 flex items-center gap-3">
+                                <span>Mohan Kumar</span>
 
-                        <img src="https://i.pravatar.cc/50?img=18"
-                            class="w-10 h-10 rounded-full">
+                            </div>
 
-                        Rahul Verma
+                        </td>
 
-                    </td>
+                        <td class="text-center whitespace-nowrap">
+                            95%
+                        </td>
 
-                    <td class="text-center">93%</td>
+                        <td class="text-center whitespace-nowrap">
+                            96%
+                        </td>
 
-                    <td class="text-center">91%</td>
+                        <td class="text-center whitespace-nowrap">
+                            94%
+                        </td>
 
-                    <td class="text-center">92%</td>
+                        <td class="text-center font-bold text-black whitespace-nowrap">
+                            950
+                        </td>
 
-                    <td class="text-center font-bold text-black">
-                        920
-                    </td>
+                    </tr>
 
-                </tr>
+                    <tr class="border-b hover:bg-slate-50">
 
-            </tbody>
+                        <td class="p-4 font-bold whitespace-nowrap">
+                            3
+                        </td>
 
-        </table>
+                        <td class="p-4">
+
+                            <div class="flex items-center gap-3 whitespace-nowrap">
+
+                                <img
+                                    src="https://i.pravatar.cc/50?img=18"
+                                    class="w-10 h-10 rounded-full">
+
+                                <span>Rahul Verma</span>
+
+                            </div>
+
+                        </td>
+
+                        <td class="text-center whitespace-nowrap">
+                            93%
+                        </td>
+
+                        <td class="text-center whitespace-nowrap">
+                            91%
+                        </td>
+
+                        <td class="text-center whitespace-nowrap">
+                            92%
+                        </td>
+
+                        <td class="text-center font-bold text-black whitespace-nowrap">
+                            920
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
 
     </div>
 

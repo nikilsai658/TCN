@@ -17,7 +17,7 @@ export class Home implements OnInit {
   testimonials = [
     {
       collegename:'',
-      image: '../../assets/images/college1.png',
+      image: '../../assets/images/Hindusthan_college.png',
      
     },
     {
@@ -26,11 +26,11 @@ export class Home implements OnInit {
     },
     {
        collegename:'',
-      image: '../../assets/images/college3.png',
+      image: '../../assets/images/CMS_college.png',
     },
     {
       collegename:'',
-      image: '../../assets/images/college4.png',
+      image: '../../assets/images/Rvs_college.png',
      
     },
     {

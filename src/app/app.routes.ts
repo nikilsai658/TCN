@@ -7,7 +7,6 @@ import { Home } from './home/home';
 import { Dashboard } from './dashboard/dashboard';
 import { Courses } from './courses/courses';
 import { PageNotFound } from './page-not-found/page-not-found';
-import { About } from './about/about';
 import { Course } from './course/course';
 import { CourseDash } from './course-dash/course-dash';
 import { Java } from './java/java';
@@ -51,9 +50,6 @@ export const routes: Routes = [
             },
             {
                 path:'home',component:Home
-            },
-            {
-                path:'about',component:About
             }
         ]
     },
