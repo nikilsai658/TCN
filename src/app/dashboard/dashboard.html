@@ -2,30 +2,56 @@
 
     <div class="min-h-screen grid grid-rows-[auto_1fr_auto]">
 
-        <!-- ================= Header ================= -->
-     <!-- ================= Header ================= -->
+<!-- ================= Header ================= -->
 <header class="bg-[#2F3E46] text-white px-4 py-3">
 
-    <div class="flex items-center justify-between">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
 
-        <!-- Left Side -->
-        <div class="flex items-center gap-3">
+        <!-- Mobile -->
+        <div class="flex lg:hidden items-center justify-between w-full">
 
-            <!-- Logo -->
-            <img
-                src="../../assets/images/logo-removebg-preview.png"
-                alt="Logo"
-                class="h-12 sm:h-14 md:h-16 w-auto rounded-lg">
+            <div class="flex items-center gap-2">
 
-            <!-- Company Name -->
-            <h2 class="text-lg sm:text-xl md:text-2xl font-semibold">
-                Technex Cloud Networks Pvt Ltd
-            </h2>
+                <img
+                    src="../../assets/images/logo-removebg-preview.png"
+                    alt="Logo"
+                    class="h-10 w-auto rounded-lg">
 
-            <!-- Small Login Button -->
+                <h2 class="text-sm font-semibold leading-tight">
+                    Technex Cloud Networks Pvt Ltd
+                </h2>
+
+            </div>
+
             <button
                 (click)="login()"
-                class="ml-3 bg-[#24c0c5] hover:bg-[#1da8ad] transition text-white text-sm font-semibold px-5 py-2 rounded-lg">
+                class="bg-[#24c0c5] hover:bg-[#1da8ad] transition text-white text-xs font-semibold px-4 py-2 rounded-lg">
+
+                Login
+
+            </button>
+
+        </div>
+
+        <!-- Desktop -->
+        <div class="hidden lg:flex items-center justify-between w-full">
+
+            <div class="flex items-center gap-3">
+
+                <img
+                    src="../../assets/images/logo-removebg-preview.png"
+                    alt="Logo"
+                    class="h-16 w-auto rounded-lg">
+
+                <h2 class="text-2xl font-semibold">
+                    Technex Cloud Networks Pvt Ltd
+                </h2>
+
+            </div>
+
+            <button
+                (click)="login()"
+                class="bg-[#24c0c5] hover:bg-[#1da8ad] transition text-white font-bold py-2.5 px-8 rounded-lg">
 
                 Login
 
@@ -36,7 +62,6 @@
     </div>
 
 </header>
-
         <!-- ================= Router ================= -->
         <main>
 
